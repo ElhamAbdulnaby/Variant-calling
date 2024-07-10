@@ -1,0 +1,31 @@
+PLINK v1.90b7.2 64-bit (11 Dec 2023)
+Options in effect:
+  --bfile Qatari156_filtered_pruned_withPheno
+  --maf 0.02
+  --make-bed
+  --out Qatari156_maf0.02
+
+Hostname: Elhams-MacBook-Air.local
+Working directory: /Users/elham/Documents/Dr-NOHA_workshop/Plink_files
+Start time: Wed Jul 10 14:49:38 2024
+
+Random number seed: 1720608578
+8192 MB RAM detected; reserving 4096 MB for main workspace.
+67735 variants loaded from .bim file.
+156 people (49 males, 107 females) loaded from .fam.
+66 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 156 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 1388 het. haploid genotypes present (see Qatari156_maf0.02.hh ); many
+commands treat these as missing.
+Total genotyping rate is 0.998816.
+0 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+67735 variants and 156 people pass filters and QC.
+Among remaining phenotypes, 0 are cases and 66 are controls.  (90 phenotypes
+are missing.)
+--make-bed to Qatari156_maf0.02.bed + Qatari156_maf0.02.bim +
+Qatari156_maf0.02.fam ... done.
+
+End time: Wed Jul 10 14:49:38 2024

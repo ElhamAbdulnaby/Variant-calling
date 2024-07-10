@@ -1,0 +1,52 @@
+# Frequency info
+Number of snaps in the file ===>bim file
+Number of people  
+Head of bim file show the snips , one from father and one from mother
+Head of fam ====> phenotype of individual
+(Family_id, person_id, father info, mother information, gender(one male, two femsale), phenotype column (have disease , have not disease))
+
+./plink --bfile Qatari156_filtered_pruned_withPheno --freq   
+
+ head ./plink.frq 
+CHR          SNP   A1   A2          MAF  NCHROBS
+   1   rs10907175    C    A      0.08974 (8%)     312. ===> 8% of individual have change in this snip
+   1    rs7519837    T    C       0.4387      310 (how many individuals were present in this snips , 312/2)
+
+==================================================
+Convert formate from bam to bed or map
+
+  ./plink --bfile Qatari156_filtered_pruned_withPheno --recode --out  Qatari156_filtered_pruned_withPheno
+To show the *bed 
+Ls *.bed
+===>To show recent bed files
+ ===> Plink_files % ls -lthr *.ped
+
+ Plink_files % ls -lthr *.map
+==============================================
+./plink --bfile Qatari156_filtered_pruned_withPheno --maf 0.05 --make-bed  --out Qatari156_maf0.05
+I would gave three files 0.05.bed, .fam and .bim 
+
+Common variant analysis  we can use 0.05 but for specific variant analysis  we can use 0.02 filter
+
+######################################################
+Geno type filerting 
+./plink --bfile Qatari156_filtered_pruned_withPheno --geno 0.02 --make-bed  --out Qatari156_geno.02
+ 0.02 ===> we will keep the ones that have 98% or more calling rate, the missing here allowed 2 %
+0.0000 is more restrictive way 
+
+================================================
+Hardy-Weinberg
+Default value 0.00001 (10-6)
+
+ ./plink --bfile Qatari156_filtered_pruned_withPheno --hwe 0.00001 --make-bed  --out Qatari156_hwe.00001
+
+
+
+##################################################
+To apply all QC analysis in one step 
+./plink --bfile Qatari156_filtered_pruned_withPheno --maf 0.05 --geno 0.02  --hwe 0.000001 --make-bed  --out Qatari156_QC
+
+
+##############################################
+PCA. ====> principal component analysis
+./plink --bfile Qatari156_QC --pca  --out Qatari156_QC_pca

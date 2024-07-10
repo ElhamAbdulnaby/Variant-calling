@@ -1,0 +1,12 @@
+PLINK v1.90b7.2 64-bit (11 Dec 2023)
+Options in effect:
+  --bfile Qatari156_filtered_pruned_withPheno
+  --maf 0.05
+
+Hostname: Elhams-MacBook-Air.local
+Working directory: /Users/elham/Documents/Dr-NOHA_workshop/Plink_files
+Start time: Wed Jul 10 14:28:13 2024
+
+Warning: No output requested.  (Did you forget --make-bed?)  Exiting.
+
+End time: Wed Jul 10 14:28:13 2024
